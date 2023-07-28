@@ -52,6 +52,17 @@ main>div:last-of-type {
     margin-inline: auto;
 }
 
+@media screen and (max-width:520px) {
+
+    header div,
+    .sub-header>div,
+    .trending,
+    main>div:last-of-type {
+        width: initial;
+        margin-inline: 1.3rem;
+    }
+}
+
 header div {
     display: flex;
     align-items: center;
@@ -64,6 +75,12 @@ header>div>div {
 
 header ul {
     min-width: max-content;
+}
+
+@media screen and (max-width:520px) {
+    header li:not(:last-of-type) {
+        display: none;
+    }
 }
 
 li {
@@ -114,6 +131,12 @@ header button,
     height: 455px;
 }
 
+@media screen and (max-width:520px) {
+    .sub-header>div:last-of-type {
+        display: none;
+    }
+}
+
 .sub-header>div:first-of-type {
     padding-block: 4rem;
     padding-block: 5.5rem;
@@ -125,6 +148,13 @@ header button,
     font-weight: 500;
     letter-spacing: -5px;
     margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width:520px) {
+    .sub-header h2 {
+        font-size: 75px;
+    }
+
 }
 
 .sub-header p {
@@ -161,9 +191,25 @@ header button,
     flex-wrap: wrap;
 }
 
+@media screen and (max-width:520px) {
+    .trending>div {
+        display: initial;
+    }
+}
+
 .trending article {
     width: calc(33.333% - 1.67rem);
     display: flex;
+}
+
+@media screen and (max-width:520px) {
+    .trending article {
+        width: initial;
+    }
+
+    .trending article:not(:last-of-type) {
+        margin-bottom: 1.7rem;
+    }
 }
 
 .article-number {
@@ -240,8 +286,22 @@ main>div:last-of-type {
     gap: 6rem;
 }
 
+@media screen and (max-width:520px) {
+    main>div:last-of-type {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
 .articles {
     width: 66.666%;
+}
+
+@media screen and (max-width:520px) {
+    .articles {
+        width: initial;
+    }
+
 }
 
 .articles article {
@@ -260,6 +320,12 @@ main>div:last-of-type {
 .articles article>img {
     height: 150px;
     width: auto;
+}
+
+@media screen and (max-width:520px) {
+    .articles article>img {
+        height: 120px;
+    }
 }
 
 .articles h3 {
@@ -298,10 +364,24 @@ aside {
     height: fit-content;
 }
 
+@media screen and (max-width:520px) {
+    aside {
+        order: -1;
+        position: initial;
+        width: initial
+    }
+}
+
 aside h2 {
     font-weight: 700;
     margin-bottom: 1rem;
     letter-spacing: 0.6px;
+}
+
+@media screen and (max-width:520px) {
+    aside h2 {
+        font-size: 13px;
+    }
 }
 
 aside h2+div {
