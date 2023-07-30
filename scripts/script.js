@@ -29,7 +29,7 @@ ms.forEach(m => {
     : (m.style.opacity = "0");
 });
 
-let animatedMs = document.querySelectorAll(".animate");
+const animatedMs = document.querySelectorAll(".animate");
 const animatedMsLen = animatedMs.length;
 const randomOrder = [];
 for (let i = 0; i < animatedMsLen; i++) {
