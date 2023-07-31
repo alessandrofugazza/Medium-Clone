@@ -73,6 +73,12 @@ header>div>div {
     flex-grow: 1;
 }
 
+@media screen and (max-width:520px) {
+    header>div>div {
+        margin-inline: 0;
+    }
+}
+
 header ul {
     min-width: max-content;
 }
